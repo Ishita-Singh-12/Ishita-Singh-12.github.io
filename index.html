@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Ishita Singh - Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#ECE5D2;--blue:#B6CBDE;--plum:#553E53}
+*{box-sizing:border-box;margin:0}
+body{background:var(--cream);color:var(--plum);font-family:'DM Sans',sans-serif;font-size:17px;line-height:1.55}
+a{color:inherit}
+.serif{font-family:'Fraunces',serif}
+.hero{position:relative;min-height:880px;overflow:hidden;padding:36px 56px}
+.blob{position:absolute;left:90px;top:290px;width:760px;height:600px;transform:rotate(-8deg)}
+.title{position:relative;z-index:2;font-family:'Fraunces',serif;font-weight:700;font-size:190px;line-height:.88;letter-spacing:.01em;text-transform:uppercase;margin-top:150px}
+.hero .left{position:absolute;left:56px;bottom:56px;z-index:2;font-family:'Fraunces',serif;font-size:26px;line-height:1.35}
+.hero .right{position:absolute;right:56px;top:160px;z-index:2;text-align:right;font-family:'Fraunces',serif;font-size:28px;line-height:1.7}
+.hero .right a{display:block;text-decoration:none}
+.hero .right a:hover{text-decoration:underline}
+.band{background:var(--plum);color:var(--cream);padding:14px 56px;display:flex;justify-content:space-between;font-family:'Fraunces',serif;font-size:20px;letter-spacing:.04em}
+section{padding:90px 56px;display:grid;grid-template-columns:260px 1fr;gap:56px;border-bottom:2px solid var(--plum)}
+section h2{font-family:'Fraunces',serif;font-weight:700;font-size:54px;line-height:1;position:sticky;top:20px;align-self:start}
+section h2 small{display:block;font-family:'DM Sans';font-size:15px;font-weight:500;letter-spacing:.14em;margin-bottom:14px}
+.row{display:grid;grid-template-columns:1fr auto;gap:8px 32px;padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid rgba(85,62,83,.3)}
+.row:last-child{border:0;margin-bottom:0;padding-bottom:0}
+.row h3{font-family:'Fraunces',serif;font-weight:600;font-size:32px;line-height:1.15}
+.row .when{font-family:'Fraunces',serif;font-size:20px;text-align:right;white-space:nowrap}
+.row p,.row ul{grid-column:1/2;max-width:720px}.row>div:last-child:not(.when){grid-column:1/-1}
+ul{padding-left:20px}li{margin:4px 0}
+.tag{display:inline-block;background:var(--blue);padding:2px 12px;border-radius:99px;font-size:14px;margin:8px 6px 0 0}
+.edu h3{font-size:36px}
+.big{font-size:19px;font-weight:500}
+.skills{display:grid;grid-template-columns:200px 1fr;gap:18px 32px}
+.skills dt{font-family:'Fraunces',serif;font-weight:600;font-size:22px}
+footer{background:var(--blue);padding:70px 56px;display:flex;justify-content:space-between;align-items:end}
+footer .serif{font-size:70px;font-weight:700;line-height:1;text-transform:uppercase}
+
+
+@media(max-width:1100px){
+.hero{padding:28px 32px;min-height:0;display:flex;flex-direction:column;gap:28px}
+.title{font-size:clamp(72px,16vw,150px);margin-top:48px}
+.blob{left:8%;top:130px;width:84%;height:auto}
+.hero .left,.hero .right{position:static;text-align:left;font-size:22px;line-height:1.5}
+.hero .right{order:2}.hero .left{order:3}
+.band{padding:12px 32px;font-size:16px}
+section{grid-template-columns:1fr;gap:28px;padding:56px 32px}
+section h2{position:static;font-size:44px}
+footer{padding:48px 32px}footer .serif{font-size:52px}
+}
+@media(max-width:600px){
+body{font-size:16px}
+.hero{padding:22px 20px}
+.title{margin-top:28px}
+.blob{top:90px;left:4%;width:92%}
+.hero .left,.hero .right{font-size:19px}
+.band{padding:10px 20px;font-size:13px;letter-spacing:.02em}
+section{padding:44px 20px;gap:22px}
+section h2{font-size:36px}
+.row{grid-template-columns:1fr;gap:6px}
+.row .when{text-align:left;white-space:normal;font-size:17px;grid-row:2}
+.row h3{font-size:24px}.edu h3{font-size:26px}
+.row h3 span{font-size:18px!important}
+.skills{grid-template-columns:1fr;gap:4px}
+.skills dd{margin:0 0 14px}
+footer{flex-direction:column;align-items:flex-start;gap:24px;padding:40px 20px}
+footer .serif{font-size:44px}
+footer .serif[style]{text-align:left!important;font-size:18px!important}
+}
+</style></head><body>
+<header class="hero">
+<svg class="blob" viewBox="-20 -40 880 620" aria-hidden="true"><path fill="#B6CBDE" d="M722 203Q742 264 686 341Q630 418 553 442Q476 466 405 435Q334 405 249 357Q164 310 144 237Q125 163 252 160Q378 156 461 101Q544 46 623 93Q701 141 722 203Z"/></svg>
+
+<h1 class="title">Ishita<br>Singh</h1>
+<div class="left">B.Tech Computer Science<br>and Engineering<br>VIT Chennai<br>CGPA 8.27</div>
+<div class="right"><a href="mailto:ishi.ishitasingh@gmail.com">ishi.ishitasingh@gmail.com</a><a href="tel:+919205416695">+91 92054 16695</a><a href="https://github.com/Ishita-Singh-12">&#8599;&nbsp; GitHub</a><a href="https://leetcode.com/u/ishita_singh12">&#8599;&nbsp; LeetCode</a><a href="https://www.linkedin.com/in/ishita-singh-8132a4293">&#8599;&nbsp; LinkedIn</a></div>
+</header>
+<div class="band"><span>Education</span><span>Experience</span><span>Projects</span><span>Skills</span></div>
+
+<section class="edu"><h2><small>01</small>Education</h2><div>
+<div class="row"><h3>Vellore Institute of Technology, Chennai</h3><div class="when">Aug 2023 - May 2027 (Expected)</div><p>Bachelor of Technology in Computer Science and Engineering.</p><p class="big">CGPA: 8.27</p></div></div></section>
+
+<section><h2><small>02</small>Experience</h2><div>
+<div class="row"><h3>Associate Consultant Intern<br><span style="font-weight:400;font-size:22px">Chiacon Consulting Pvt. Ltd.</span></h3><div class="when">Jun 2026 - Aug 2026</div>
+<ul><li>Performed data analysis and reporting using Microsoft Azure to support client-facing consulting deliverables.</li><li>Compiled and analyzed datasets to identify trends and generate actionable insights for ongoing projects.</li><li>Prepared structured reports and summaries to support decision-making for the consulting team.</li></ul></div></div></section>
+
+<section><h2><small>03</small>Projects</h2><div>
+<div class="row"><h3>Prawns - Password Breach Checker</h3><div class="when">May 2026</div><ul><li>Privacy-preserving breach checker using k-anonymity, so plaintext passwords are never transmitted; SHA-hashed prefix search enables client-side verification.</li><li>Redis-backed prefix lookup and caching layer, deployed on AWS (EC2, Lambda, ElastiCache).</li></ul><div><span class="tag">JavaScript</span><span class="tag">Redis</span><span class="tag">AWS</span></div></div>
+<div class="row"><h3>Multi-Keyword Searchable Encryption</h3><div class="when">March 2026</div><ul><li>Proof-of-concept for secure keyword search over encrypted documents stored in the cloud.</li><li>Three-party model with cryptographic methods to protect documents and search queries.</li><li>Serverless architecture on AWS Lambda, S3, DynamoDB and KMS, with TF-IDF ranking, virtual keywords and AES-GCM encryption.</li></ul><div><span class="tag">Python</span><span class="tag">AWS Lambda</span><span class="tag">S3</span><span class="tag">DynamoDB</span></div></div>
+<div class="row"><h3>LifeLink - Community Blood Donor Network</h3><div class="when">Sep 2026</div><ul><li>Full-stack platform for coordinating blood requests between hospitals, patients and nearby donors.</li><li>Hospital dashboard with donor availability, blood group inventory and request status, plus a donor portal that receives live request alerts.</li></ul><div><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Socket.IO</span><span class="tag">MongoDB</span></div></div>
+<div class="row"><h3>Delude - Storefront for a UAE Streetwear Brand</h3><div class="when">Sep 2026 - Present</div><ul><li>Built the brand's first store on Shopify (freelance), moving it off an Instagram-only presence.</li><li>Chaptered drop catalog, eleven-chapter archive and pop-up event pages.</li><li>Class-hoodie ordering flow for graduating classes.</li></ul><div><span class="tag">Shopify</span><a class="tag" href="https://delude.shop" style="text-decoration:none">delude.shop</a></div></div>
+<div class="row"><h3>Open Source Contributions</h3><div class="when">Oct 2026 - Present</div><ul><li><b>Repowise:</b> merged fix to dead-code analysis so a use from inside a symbol's own span no longer counts as a use of it.</li><li><b>bpg/terraform-provider-proxmox:</b> merged plan-time check rejecting an init interface that collides with a disk.</li></ul></div>
+</div></section>
+
+<section style="border-bottom:0"><h2><small>04</small>Technical Skills</h2><dl class="skills">
+<dt>Languages</dt><dd>Java, Python, C/C++, JavaScript, HTML/CSS, R</dd>
+<dt>Frameworks &amp; Libraries</dt><dd>React, Node.js, Flask, pandas, NumPy</dd>
+<dt>Databases &amp; Cloud</dt><dd>MySQL, PostgreSQL, Redis, AWS (Lambda, S3, DynamoDB, EC2), Azure, Power BI</dd>
+<dt>Tools &amp; AI/ML</dt><dd>Git, GitHub, Docker, VS Code, PyCharm, Generative AI (GANs, LLMs), Prompt Engineering, RAG</dd></dl></section>
+<footer><div class="serif">Ishita<br>Singh</div><div class="serif" style="font-size:24px;text-transform:none;text-align:right;font-weight:400">ishi.ishitasingh@gmail.com<br>+91 92054 16695</div></footer>
+</body></html>
