@@ -18,13 +18,13 @@ a{color:inherit}
 section{padding:90px 56px;display:grid;grid-template-columns:260px 1fr;gap:56px;border-bottom:2px solid var(--plum)}
 section h2{font-family:'Fraunces',serif;font-weight:700;font-size:54px;line-height:1;position:sticky;top:20px;align-self:start}
 section h2 small{display:block;font-family:'DM Sans';font-size:15px;font-weight:500;letter-spacing:.14em;margin-bottom:14px}
-.row{display:grid;grid-template-columns:1fr auto;gap:8px 32px;padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid rgba(85,62,83,.3)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:8px 32px;padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid rgba(85,62,83,.3)}
 .row:last-child{border:0;margin-bottom:0;padding-bottom:0}
 .row h3{font-family:'Fraunces',serif;font-weight:600;font-size:32px;line-height:1.15}
 .row .when{font-family:'Fraunces',serif;font-size:20px;text-align:right;white-space:nowrap}
-.row p,.row ul{grid-column:1/2;max-width:720px}.row>div:last-child:not(.when){grid-column:1/-1}
+.row p,.row ul{grid-column:1/2;max-width:720px}.row>div:last-child:not(.when){grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:4px}
 ul{padding-left:20px}li{margin:4px 0}
-.tag{display:inline-block;background:var(--blue);padding:2px 12px;border-radius:99px;font-size:14px;margin:8px 6px 0 0}
+.tag{display:inline-block;background:var(--blue);padding:2px 12px;border-radius:99px;font-size:14px;margin:0}
 .edu h3{font-size:36px}
 .big{font-size:19px;font-weight:500}
 .skills{display:grid;grid-template-columns:200px 1fr;gap:18px 32px}
